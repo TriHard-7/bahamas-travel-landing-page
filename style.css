@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200;1,300&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:ital@1&display=swap');
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Montserrat', 'sans-serif';
+}
+
+.showcase {
+   position: absolute;
+   right: 0;
+   width: 100%;
+   min-height: 100vh;
+   padding: 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: #111;
+   color: #fff;
+   z-index: 2;
+}
+
+.showcase header {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 40px 100px;
+   z-index: 1000;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.toggle.active {
+   background: url('close.svg');
+   background-repeat: no-repeat;
+   background-size: 25px;
+   background-position: center;
+   filter: opacity(1);
+}
+
+.logo {
+   text-transform: uppercase;
+   cursor: pointer;
+}
+
+.toggle {
+   position: relative;
+   width: 60px;
+   height: 50px;
+   background: url('icons8-hamburger-96.png');
+   background-repeat: no-repeat;
+   background-size: 30px;
+   background-position: center;
+   cursor: pointer;
+   filter: invert(1);
+}
+
+.showcase video {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   opacity: 0.8;
+}
+
+.text {
+   position: relative;
+   z-index: 10;
+}
+
+.text1 {
+   font-style: italic;
+   font-weight: normal;
+   font-size: calc(18px + 16 * ((100vw - 320px) / 1180));
+   padding: 0 0 5px 90px;
+}
+
+.text2 {
+   font-size: 100px;
+   text-transform: uppercase;
+   font-family: 'Cinzel';
+}
+
+.text3 {
+   font-style: italic;
+   font-weight: 400;
+   font-size: 50px;
+   display: block;
+   padding: 0px 0 0 400px;
+}
+
+.ptext {
+   font-size: 1.2em;
+   font-weight: 300;
+   line-height: 2;
+   margin: 15px 0;
+   max-width: 700px;
+}
+
+.text a {
+   display: inline-block;
+   font-size: 1em;
+   background: #fff;
+   padding: 10px 30px;
+   text-decoration: none;
+   text-transform: uppercase;
+   color: #333;
+   font-weight: 600;
+   letter-spacing: 2px;
+   margin-top: 10px;
+   transition: 0.2s;
+}
+
+.text a:hover {
+   padding: 10px 40px;
+   letter-spacing: 4px;
+}
+
+.overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: #70a6bd71;
+   mix-blend-mode: overlay;
+}
+
+.socials {
+   position: absolute;
+   bottom: 20px;
+   z-index: 10;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+   list-style: none;
+   cursor: pointer;
+}
+
+.socials li {
+   display: inline-block;
+   margin-right: 20px;
+   filter: opacity(1);
+   margin-right: 20px;
+   filter: brightness(0.5);
+   transform: scale(0.9);
+}
+
+.showcase.active {
+   right: 300px;
+}
+
+.menu {
+   position: absolute;
+   top: 0;
+   right: inherit;
+   width: 300px;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.menu ul {
+   position: relative;
+   list-style: none;
+}
+
+.menu ul li a {
+   text-decoration: none;
+   font-size: 25px;
+   color: #111;
+}
+
+@media(max-width: 798px) {
+   .showcase, .showcase header {
+      padding: 40px;
+   }
+   .text1 {
+      font-size: 1rem;
+   }
+   .text2 {
+      font-size: 50px;
+   }
+   .text3 {
+      font-size: 30px;
+      display: block;
+      padding: 0px 0 0 200px;
+   }
+}

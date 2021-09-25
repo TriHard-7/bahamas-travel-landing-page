@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css" class="style css">
+   <title>Travel Landing Page</title>
+</head>
+
+<body>
+   <section class="showcase">
+      <header>
+         <h2 class="logo">Travel</h2>
+         <div class="toggle"></div>
+      </header>
+
+      <video src="/production ID_4069480.mp4" muted loop autoplay></video>
+
+      <div class="overlay"></div>
+
+      <div class="text">
+         <h4 class="text1">The Islands of The</h4>
+         <h3 class="text2">Bahamas</h3>
+         <h4 class="text3">fly away</h4>
+         <p class="ptext">The best kept secret of The Bahamas is the country’s sheer size and diversity. With 16 major
+            islands, The
+            Bahamas is an unmatched destination, a heart-pounding adventure across 100,000 square miles of the world’s
+            clearest ocean.</p>
+         <a href="#">Explore</a>
+      </div>
+      <ul class="socials">
+         <li><img src="/facebook.svg" </li>
+         <li><img src="/twitter.svg" </li>
+         <li><img src="/instagram.svg" </li>
+      </ul>
+   </section>
+   <div class="menu">
+      <ul>
+         <li><a href="#">Islands</a></li>
+         <li><a href="#">Experiences</a></li>
+         <li><a href="#">Hotels</a></li>
+         <li><a href="#">Photos</a></li>
+      </ul>
+   </div>
+   <script>
+      const menuToggle = document.querySelector('.toggle')
+      const showCase = document.querySelector('.showcase')
+
+      menuToggle.addEventListener('click', () => {
+         menuToggle.classList.toggle('active');
+         showCase.classList.showCase('active');
+      })
+   </script>
+</body>
+
+</html>
